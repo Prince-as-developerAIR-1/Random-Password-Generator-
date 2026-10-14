@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Pass - Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+
+    <div class="container">
+        <h1>🚀 SPACE PASS</h1>
+        <p class="subtitle">Generate strong passwords from outer space</p>
+
+        <div class="box">
+            <div class="output-box">
+                <input type="text" id="password" randomly placeholder="Your password will appear here">
+                <button id="copyBtn">Copy</button>
+            </div>
+
+            <div class="controls">
+                <div class="control-row">
+                    <label>Password Length: <span id="lengthValue">12</span></label>
+                    <input type="range" id="length" min="4" max="30" value="12">
+                </div>
+
+            <div class="control-row checkbox">
+                <label><input type="checkbox" id="uppercase" checked> Include ABC</label>
+                <label><input type="checkbox" id="lowercase" checked> Include abc</label>
+                <label><input type="checkbox" id="numbers" checked> Include 123</label>
+                <label><input type="checkbox" id="symbols" checked> Include @#$</label>
+            </div>
+        </div>
+
+            <button id="generateBtn">GENERATE PASSWORD</button>
+            <p id="strength">Strength: -</p>
+        </div>
+            <p class="footer">Made by Prince - 14 y/o explorer</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
